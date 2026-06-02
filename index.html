@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servizio Enzo — Recupero e Sblocco Patente di Guida a Roma</title>
+  <meta name="description" content="Consulenza amministrativa a Roma per sbloccare, recuperare e rinnovare la patente di guida. Trattamento rapido, riservato e garantito." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.net"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0B192C',
+            'navy-deep': '#060F1C',
+            gold: '#E0B034',
+            'gold-soft': '#F0CC6A',
+            border: '#e2e8f0',
+            muted: '#64748b',
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Inter"', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    :root {
+      --navy: #0B192C;
+      --navy-deep: #060F1C;
+      --gold: #E0B034;
+      --gold-soft: #F0CC6A;
+      --gradient-navy: linear-gradient(135deg, #0B192C 0%, #122844 100%);
+      --gradient-gold: linear-gradient(135deg, #E0B034 0%, #c89522 100%);
+      --shadow-gold: 0 12px 40px -12px rgba(224,176,52,0.5);
+    }
+    body { font-family: 'Inter', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+    h1, h2, h3, h4 { font-family: 'Playfair Display', Georgia, serif; letter-spacing: -0.02em; }
+  </style>
+</head>
+<body class="bg-white text-slate-800">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-white/85 border-b border-slate-200/60">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between">
+      <a href="#top" class="flex items-center gap-2.5">
+        <div class="w-9 h-9 rounded-md flex items-center justify-center" style="background: var(--gradient-navy)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg>
+        </div>
+        <span class="font-display text-xl font-bold text-navy">Servizio Enzo</span>
+      </a>
+      <div class="flex items-center gap-3">
+        <span class="hidden sm:inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-full border border-slate-200 text-slate-500">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Roma, IT
+        </span>
+        <a href="https://wa.me." target="_blank" rel="noopener noreferrer" class="hidden md:inline-flex items-center gap-2 text-sm font-semibold px-4 py-2 rounded-md text-white transition hover:opacity-90" style="background: var(--navy)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+          Contatta ora
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative overflow-hidden" style="background: var(--gradient-navy)">
+    <div class="absolute inset-0 opacity-[0.07]" style="background-image: radial-gradient(circle at 20% 10%, #E0B034 0, transparent 40%), radial-gradient(circle at 80% 80%, #E0B034 0, transparent 35%);"></div>
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pt-16 pb-24 md:pt-24 md:pb-32">
+      <div class="max-w-3xl">
+        <span class="inline-flex items-center gap-2 text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-full border" style="border-color: rgba(224,176,52,0.4); color: var(--gold-soft)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.44 4 16 4 11V4a1 1 0 0 1 1-1c2 0 4.5 1.2 6.24 2.72a1 1 0 0 0 1.53-.03C13.64 3.28 16.18 2 18 2a1 1 0 0 1 1 1v10Z"/></svg>
+          Consulenza Amministrativa · Roma
+        </span>
+        <h1 class="mt-6 font-display text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.05]">
+          Sblocca e Recupera la Tua Patente di Guida in Modo <span style="color: var(--gold)">Rapido e Sicuro</span>.
+        </h1>
+        <p class="mt-6 text-lg md:text-xl text-white/75 leading-relaxed max-w-2xl">
+          Patente bloccata, sospesa o nessuna risposta dall'amministrazione? Il nostro studio gestisce la tua pratica con discrezione e competenza, fino alla completa risoluzione.
+        </p>
+
+        <div class="mt-7 inline-flex flex-wrap items-center gap-2 px-4 py-2.5 rounded-full border" style="border-color: rgba(224,176,52,0.35); background: rgba(224,176,52,0.08);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.44 4 16 4 11V4a1 1 0 0 1 1-1c2 0 4.5 1.2 6.24 2.72a1 1 0 0 0 1.53-.03C13.64 3.28 16.18 2 18 2a1 1 0 0 1 1 1v10Z"/></svg>
+          <span class="text-sm text-white/90 font-medium">Garanzia Soddisfatti o Rimborsati</span>
+          <span class="text-white/30">|</span>
+          <span class="text-sm text-white/90 font-medium">Trattamento Rapido & Riservato</span>
+        </div>
+
+        <div class="mt-9 flex flex-col sm:flex-row gap-3">
+          <a href="https://wa.me." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-md font-semibold text-base transition hover:-translate-y-0.5" style="background: var(--gradient-gold); color: var(--navy); box-shadow: var(--shadow-gold);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+            Scrivi su WhatsApp
+          </a>
+          <a href="mailto:servizioenzo@proton.me?subject=Richiesta%20Informazioni%20Patente" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-md font-semibold text-base border-2 text-white transition hover:bg-white/10" style="border-color: rgba(255,255,255,0.25)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            Richiedi Informazioni
+          </a>
+        </div>
+
+        <div class="mt-10 grid grid-cols-3 gap-6 max-w-lg">
+          <div><div class="font-display text-2xl md:text-3xl font-bold" style="color: var(--gold)">+15</div><div class="text-xs md:text-sm text-white/60 mt-1">Anni di esperienza</div></div>
+          <div><div class="font-display text-2xl md:text-3xl font-bold" style="color: var(--gold)">98%</div><div class="text-xs md:text-sm text-white/60 mt-1">Pratiche risolte</div></div>
+          <div><div class="font-display text-2xl md:text-3xl font-bold" style="color: var(--gold)">24h</div><div class="text-xs md:text-sm text-white/60 mt-1">Prima risposta</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem / Solution -->
+  <section class="py-20 md:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="max-w-2xl">
+        <span class="text-xs font-semibold tracking-wider uppercase" style="color: var(--gold)">I problemi che risolviamo</span>
+        <h2 class="mt-3 font-display text-3xl md:text-4xl font-bold text-navy">Una soluzione concreta per ogni situazione amministrativa.</h2>
+        <p class="mt-4 text-slate-500 text-lg">Ci occupiamo personalmente della tua pratica, eliminando burocrazia, attese e incertezze.</p>
+      </div>
+
+      <div class="mt-14 grid md:grid-cols-3 gap-6">
+        <article class="group p-7 rounded-xl border border-slate-200 bg-white transition hover:-translate-y-1" style="box-shadow: 0 1px 3px rgba(11,25,44,0.05)">
+          <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-5 transition group-hover:scale-105" style="background: rgba(224,176,52,0.12)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3 class="font-display text-xl font-bold mb-2 text-navy">Patente Sospesa o Bloccata</h3>
+          <p class="text-slate-500 leading-relaxed">Analizziamo il provvedimento, identifichiamo la procedura corretta e curiamo l'intero iter per restituirti il diritto di guidare.</p>
+        </article>
+
+        <article class="group p-7 rounded-xl border border-slate-200 bg-white transition hover:-translate-y-1" style="box-shadow: 0 1px 3px rgba(11,25,44,0.05)">
+          <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-5 transition group-hover:scale-105" style="background: rgba(224,176,52,0.12)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3 class="font-display text-xl font-bold mb-2 text-navy">Ritardi della Motorizzazione</h3>
+          <p class="text-slate-500 leading-relaxed">Solleciti, verifiche e interlocuzioni dirette con gli uffici competenti per accelerare i tempi della tua pratica.</p>
+        </article>
+
+        <article class="group p-7 rounded-xl border border-slate-200 bg-white transition hover:-translate-y-1" style="box-shadow: 0 1px 3px rgba(11,25,44,0.05)">
+          <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-5 transition group-hover:scale-105" style="background: rgba(224,176,52,0.12)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </div>
+          <h3 class="font-display text-xl font-bold mb-2 text-navy">Regolarizzazione Senza Stress</h3>
+          <p class="text-slate-500 leading-relaxed">Dalla documentazione alla presentazione delle istanze: gestiamo ogni dettaglio mentre tu pensi al resto.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="py-20 md:py-28" style="background: #F8F7F4">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="text-center max-w-2xl mx-auto">
+        <span class="text-xs font-semibold tracking-wider uppercase" style="color: var(--gold)">Come lavoriamo</span>
+        <h2 class="mt-3 font-display text-3xl md:text-4xl font-bold text-navy">Tre passi semplici verso la tua patente.</h2>
+      </div>
+
+      <div class="mt-16 relative grid md:grid-cols-3 gap-8 md:gap-6">
+        <div class="hidden md:block absolute top-7 left-[16%] right-[16%] h-px" style="background: linear-gradient(90deg, transparent, var(--gold), transparent)"></div>
+
+        <div class="relative text-center">
+          <div class="relative z-10 mx-auto w-14 h-14 rounded-full flex items-center justify-center mb-5 border-4 border-[#F8F7F4]" style="background: var(--navy)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div class="text-xs font-bold tracking-widest mb-2" style="color: var(--gold)">PASSO 01</div>
+          <h3 class="font-display text-xl font-bold mb-2 text-navy">Contatto Iniziale</h3>
+          <p class="text-slate-500 leading-relaxed max-w-xs mx-auto">Ci scrivi su WhatsApp o via email. Ascoltiamo la tua situazione in totale riservatezza.</p>
+        </div>
+
+        <div class="relative text-center">
+          <div class="relative z-10 mx-auto w-14 h-14 rounded-full flex items-center justify-center mb-5 border-4 border-[#F8F7F4]" style="background: var(--navy)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          </div>
+          <div class="text-xs font-bold tracking-widest mb-2" style="color: var(--gold)">PASSO 02</div>
+          <h3 class="font-display text-xl font-bold mb-2 text-navy">Analisi della Pratica</h3>
+          <p class="text-slate-500 leading-relaxed max-w-xs mx-auto">Esaminiamo i documenti, valutiamo le opzioni e ti presentiamo un piano d'azione chiaro.</p>
+        </div>
+
+        <div class="relative text-center">
+          <div class="relative z-10 mx-auto w-14 h-14 rounded-full flex items-center justify-center mb-5 border-4 border-[#F8F7F4]" style="background: var(--navy)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <div class="text-xs font-bold tracking-widest mb-2" style="color: var(--gold)">PASSO 03</div>
+          <h3 class="font-display text-xl font-bold mb-2 text-navy">Risoluzione</h3>
+          <p class="text-slate-500 leading-relaxed max-w-xs mx-auto">Gestiamo ogni passaggio amministrativo fino allo sblocco definitivo della tua patente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust / Testimonials -->
+  <section class="py-20 md:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="text-center max-w-2xl mx-auto">
+        <span class="text-xs font-semibold tracking-wider uppercase" style="color: var(--gold)">La fiducia dei nostri clienti</span>
+        <h2 class="mt-3 font-display text-3xl md:text-4xl font-bold text-navy">Recensioni dei clienti</h2>
+      </div>
+
+      <div class="mt-10 flex flex-wrap justify-center gap-4 md:gap-6">
+        <div class="flex items-center gap-2 px-4 py-2 rounded-full border text-sm font-medium" style="border-color: rgba(224,176,52,0.35); color: var(--navy); background: rgba(224,176,52,0.06)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.44 4 16 4 11V4a1 1 0 0 1 1-1c2 0 4.5 1.2 6.24 2.72a1 1 0 0 0 1.53-.03C13.64 3.28 16.18 2 18 2a1 1 0 0 1 1 1v10Z"/></svg>
+          Riservatezza Garantita
+        </div>
+        <div class="flex items-center gap-2 px-4 py-2 rounded-full border text-sm font-medium" style="border-color: rgba(224,176,52,0.35); color: var(--navy); background: rgba(224,176,52,0.06)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+          Consulenza Certificata
+        </div>
+        <div class="flex items-center gap-2 px-4 py-2 rounded-full border text-sm font-medium" style="border-color: rgba(224,176,52,0.35); color: var(--navy); background: rgba(224,176,52,0.06)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          Soddisfatti o Rimborsati
+        </div>
+      </div>
+
+      <div class="mt-14 grid md:grid-cols-3 gap-6">
+        <article class="relative p-7 md:p-8 rounded-xl border bg-white transition hover:-translate-y-1" style="border-color: rgba(11,25,44,0.08); box-shadow: 0 1px 3px rgba(11,25,44,0.05)">
+          <div class="flex items-center gap-1 mb-4">
+            <svg class="w-4 h-4" style="color: var(--gold)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="w-4 h-4" style="color: var(--gold)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="w-4 h-4" style="color: var(--gold)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="w-4 h-4" style="color: var(--gold)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="w-4 h-4" style="color: var(--gold)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <blockquote class="text-slate-500 leading-relaxed mb-6">"Dopo 6 mesi di blocco burocratico, il team ha risolto la mia pratica in tempi record. Professionisti assoluti."</blockquote>
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold" style="background: var(--navy); color: var(--gold)">M</div>
+            <span class="text-sm font-semibold text-navy">Marco G.</span>
+          </div>
+          <svg class="absolute top-6 right-6 w-5 h-5 opacity-20" style="color: var(--navy)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.44 4 16 4 11V4a1 1 0 0 1 1-1c2 0 4.5 1.2 6.24 2.72a1 1 0 0 0 1.53-.03C13.64 3.28 16.18 2 18 2a1 1 0 0 1 1 1v10Z"/></svg>
+        </article>
+
+        <article class="relative p-7 md:p-8 rounded-xl border bg-white transition hover:-translate-y-1" style="border-color: rgba(11,25,44,0.08); box-shadow: 0 1px 3px rgba(11,25,44,0.05)">
+          <div class="flex items-center gap-1 mb-4">
+            <svg class="w-4 h-4" style="color: var(--gold)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="w-4 h-4" style="color: var(--gold)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="w-4 h-4" style="color: var(--gold)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="w-4 h-4" style="color: var(--gold)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="w-4 h-4" style="color: var(--gold)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <blockquote class="text-slate-500 leading-relaxed mb-6">"Sospensione risolta senza stress. Massima riservatezza e comunicazione trasparente."</blockquote>
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold" style="background: var(--navy); color: var(--gold)">E</div>
+            <span class="text-sm font-semibold text-navy">Elena R.</span>
+          </div>
+          <svg class="absolute top-6 right-6 w-5 h-5 opacity-20" style="color: var(--navy)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.44 4 16 4 11V4a1 1 0 0 1 1-1c2 0 4.5 1.2 6.24 2.72a1 1 0 0 0 1.53-.03C13.64 3.28 16.18 2 18 2a1 1 0 0 1 1 1v10Z"/></svg>
+        </article>
+
+        <article class="relative p-7 md:p-8 rounded-xl border bg-white transition hover:-translate-y-1" style="border-color: rgba(11,25,44,0.08); box-shadow: 0 1px 3px rgba(11,25,44,0.05)">
+          <div class="flex items-center gap-1 mb-4">
+            <svg class="w-4 h-4" style="color: var(--gold)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="w-4 h-4" style="color: var(--gold)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="w-4 h-4" style="color: var(--gold)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="w-4 h-4" style="color: var(--gold)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="w-4 h-4" style="color: var(--gold)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <blockquote class="text-slate-500 leading-relaxed mb-6">"Servizio eccellente, veloce e affidabile. Consigliatissimo."</blockquote>
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold" style="background: var(--navy); color: var(--gold)">A</div>
+            <span class="text-sm font-semibold text-navy">Alessandro V.</span>
+          </div>
+          <svg class="absolute top-6 right-6 w-5 h-5 opacity-20" style="color: var(--navy)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.44 4 16 4 11V4a1 1 0 0 1 1-1c2 0 4.5 1.2 6.24 2.72a1 1 0 0 0 1.53-.03C13.64 3.28 16.18 2 18 2a1 1 0 0 1 1 1v10Z"/></svg>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 md:py-28 relative overflow-hidden" style="background: var(--gradient-navy)">
+    <div class="absolute -top-20 -right-20 w-96 h-96 rounded-full opacity-20 blur-3xl" style="background: var(--gold)"></div>
+    <div class="relative max-w-4xl mx-auto px-5 sm:px-8 text-center">
+      <svg class="w-12 h-12 mx-auto mb-6" style="color: var(--gold)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.44 4 16 4 11V4a1 1 0 0 1 1-1c2 0 4.5 1.2 6.24 2.72a1 1 0 0 0 1.53-.03C13.64 3.28 16.18 2 18 2a1 1 0 0 1 1 1v10Z"/></svg>
+      <h2 class="font-display text-3xl md:text-5xl font-bold text-white leading-tight">
+        Riprendi la guida della tua vita. <span style="color: var(--gold)">Oggi stesso.</span>
+      </h2>
+      <p class="mt-5 text-lg text-white/75 max-w-xl mx-auto">
+        Una consulenza iniziale gratuita su WhatsApp. Risposta entro 24 ore, senza impegno.
+      </p>
+      <div class="mt-9 flex flex-col sm:flex-row justify-center gap-3">
+        <a href="https://wa.me." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-md font-semibold text-base transition hover:-translate-y-0.5" style="background: var(--gradient-gold); color: var(--navy); box-shadow: var(--shadow-gold);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+          Scrivi ora su WhatsApp
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <a href="mailto:servizioenzo@proton.me?subject=Richiesta%20Informazioni%20Patente" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-md font-semibold text-base border-2 text-white transition hover:bg-white/10" style="border-color: rgba(255,255,255,0.25)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          Invia un'email
+        </a>
+      </div>
+      <p class="mt-6 text-sm text-white/50">Riservatezza garantita · Nessun costo per la prima consulenza</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background: var(--navy-deep)">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14">
+      <div class="grid md:grid-cols-3 gap-10">
+        <div>
+          <div class="flex items-center gap-2.5">
+            <div class="w-9 h-9 rounded-md flex items-center justify-center border" style="border-color: rgba(224,176,52,0.3)">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg>
+            </div>
+            <span class="font-display text-xl font-bold text-white">Servizio Enzo</span>
+          </div>
+          <p class="mt-4 text-sm text-white/55 leading-relaxed max-w-xs">Consulenza amministrativa specializzata nel recupero e sblocco della patente di guida.</p>
+        </div>
+
+        <div>
+          <h4 class="font-sans text-xs font-semibold tracking-widest uppercase mb-4" style="color: var(--gold)">Sede</h4>
+          <div class="flex items-start gap-3 text-white/75 text-sm">
+            <svg class="w-4 h-4 mt-0.5 flex-shrink-0" style="color: var(--gold)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <address class="not-italic leading-relaxed">Piazza Colonna 370<br/>00187 Roma, Italia</address>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-sans text-xs font-semibold tracking-widest uppercase mb-4" style="color: var(--gold)">Contatti</h4>
+          <div class="space-y-3">
+            <a href="mailto:servizioenzo@proton.me?subject=Richiesta%20Informazioni%20Patente" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-white/75 text-sm hover:text-white transition">
+              <svg class="w-4 h-4" style="color: var(--gold)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              servizioenzo@proton.me
+            </a>
+            <a href="https://wa.me." target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-white/75 text-sm hover:text-white transition">
+              <svg class="w-4 h-4" style="color: var(--gold)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+              WhatsApp diretto
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 pt-6 border-t flex flex-col sm:flex-row justify-between gap-3 text-xs text-white/40" style="border-color: rgba(255,255,255,0.08)">
+        <p>© 2025 Servizio Enzo. Tutti i diritti riservati.</p>
+        <p>Consulenza Amministrativa · Roma, Italia</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
